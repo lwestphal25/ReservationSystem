@@ -4,14 +4,22 @@ public class Reservation {
     public int priority;
     public long timeMade;
 
+    public boolean indoors;
+
+    public boolean standard;
+
+    // if you're inside you can have maximum 4 people
+
     // System.currentTimeMillis()
 
 
-    public Reservation(int pnumPeople, double ptime, int ppriority, long ptimeMade){
+    public Reservation(int pnumPeople, double ptime, int ppriority, long ptimeMade, boolean pindoors, boolean pstandard){
         numPeople = pnumPeople;
         time = ptime;
         priority = ppriority;
         timeMade = ptimeMade;
+        indoors = pindoors;
+        standard = pstandard;
 
     }
 
