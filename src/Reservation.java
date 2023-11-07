@@ -24,6 +24,23 @@ public class Reservation {
     }
 
     public void makeString(){
-       System.out.println("Reservation for this many people: "+numPeople+". Made for this time: " +time+". Made at this time: "+timeMade+". Given priority number: "+priority);
+       System.out.println("A reservation for "+numPeople+" people at " +time+ " o'clock was made at "+timeMade+" milliseconds. The reservation has been given priority "+priority+ " out of 10");
+    }
+    public void makeStringWaitlist(){
+        System.out.println("A reservation for "+numPeople+" people at " +time+ " o'clock was made at "+timeMade+" milliseconds. The reservation is on the waitlist");
+
+    }
+
+    public void show_tables(){
+        if (indoors && standard){
+            System.out.println("Reservation is inside on a standard table");
+        }
+        if (indoors && !standard){
+            System.out.println("Reservation is inside on a hightop table");
+        }
+        if (!indoors){
+            System.out.println("Reservation is outside on a standard table");
+        }
+
     }
 }
