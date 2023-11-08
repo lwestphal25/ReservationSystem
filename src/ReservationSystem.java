@@ -142,7 +142,8 @@ public class ReservationSystem {
     public void chooseMethod() {
         System.out.println("Welcome to our Reservation System. Follow the prompts, and type STOP at any time to exit the reservation system, and press the enter key to move to the next action when you need it. Type anything to continue");
         Scanner scan = new Scanner(System.in);
-        while (true) {
+        boolean run = true;
+        while (run) {
             System.out.println("Type one of the following numbers: ADD RESERVATION(1), REMOVE RESERVATION(2), SEE RESERVATIONS(3), SORT RESERVATIONS(4)");
             String method = scan.nextLine();
             if (method.equals("1")) {
@@ -384,6 +385,12 @@ public class ReservationSystem {
             else{
                System.out.println("Please type your choice again");
             }
+            System.out.println("type e to exit the program, or type anything else to continue");
+            String e = scan.nextLine();
+            if (e.equals("e")){
+               run = false;
+            }
+
 
 
         }
