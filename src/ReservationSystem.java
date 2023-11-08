@@ -140,7 +140,7 @@ public class ReservationSystem {
 
 
     public void chooseMethod() {
-        System.out.println("Welcome to our Reservation System. Follow the prompts, and type STOP at any time to exit the reservation system, and press the enter key to move to the next action when you need it. Type anything to continue");
+        System.out.println("Welcome to our Reservation System. Follow the prompts, and type STOP at any time to exit the reservation system");
         Scanner scan = new Scanner(System.in);
         boolean run = true;
         while (run) {
